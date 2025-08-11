@@ -1,0 +1,12 @@
+[client]
+toolbarMode = "minimal"
+
+[server]
+runOnSave = true
+
+[theme]
+base = "dark"
+primaryColor = "#16a34a"            # Verde El Deber
+backgroundColor = "#0a0f14"         # Oscuro
+secondaryBackgroundColor = "#111827"
+textColor = "#e5e7eb"
