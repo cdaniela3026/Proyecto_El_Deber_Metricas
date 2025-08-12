@@ -1,13 +1,9 @@
-import requests, streamlit as st
-
-URL = "https://raw.githubusercontent.com/cdaniela3026/Proyecto_El_Deber_Metricas/main/live_data1.json"
-def load_tiktok_json(url: str):
-    try:
-        r = requests.get(url, timeout=10)
-        r.raise_for_status()
-        return r.json()
-    except Exception as e:
-        st.error(f"No pude leer TikTok JSON: {e}")
-        return {}
-
-data = load_tiktok_json(URL)
+{
+  "items": [
+    {
+      "statistics": {
+        "viewers": 1234
+      }
+    }
+  ]
+}
