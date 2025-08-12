@@ -10,7 +10,7 @@ load_dotenv()
 
 app = FastAPI(title="Local API - Live Analytics")
 
-# CORS abierto (ajusta si querés restringir orígenes)
+# CORS abierto (se debe ajustar si se quiere  restringir orígenes)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -153,7 +153,7 @@ TIKTOK_DATA_FILE = os.getenv("TIKTOK_DATA_FILE", "live_data1.json")
 @app.get("/tiktok-stats")
 def tiktok_stats(
     user: str = Query(default=""),
-    fallback: bool = Query(default=True)  # << podés desactivar el fallback desde el front
+    fallback: bool = Query(default=True)  # << se puede desactivar el fallback desde el front
 ):
     candidates = []
     if user:

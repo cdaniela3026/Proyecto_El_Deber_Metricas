@@ -8,6 +8,7 @@ from requests.adapters import HTTPAdapter, Retry
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+import time
 
 # -----------------------------
 # Config & helpers

@@ -5,7 +5,7 @@
 //   # Opcional si TikTok bloquea: $env:TIKTOK_SESSION_ID="<sessionid>"; $env:TIKTOK_MS_TOKEN="<msToken>"
 //   node .\tiktok_live.js
 //
-// También podés pasar el usuario como argumento:  node tiktok_live.js usuario_en_vivo
+// También se puede pasar el usuario como argumento:  node tiktok_live.js usuario_en_vivo
 
 const { WebcastPushConnection } = require("tiktok-live-connector");
 const fs = require("fs");
